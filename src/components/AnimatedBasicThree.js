@@ -31,7 +31,14 @@ export default class AnimatedBasicThree extends Component {
         null, { dx: this.animatedValue.x, dy: this.animatedValue.y}
       ]),
       onPanResponderRelease: (e, gestureState) => {
-
+        this.animatedValue.flattenOffset();
+        Animated.decay(this.animatedValue, {
+          deceleration: 0.993,
+          velocity: {
+            x: gestureState.vx,
+            y: gestureState.vy,
+          }
+        }).start();
       },
     })
   }
@@ -58,7 +65,7 @@ const styles = StyleSheet.create({
   box: {
     backgroundColor: '#333',
     width: 100,
-    height: 50,
+    height: 100,
     alignItems: 'center',
     justifyContent: 'center',
   },
