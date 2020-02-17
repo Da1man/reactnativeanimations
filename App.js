@@ -6,11 +6,12 @@ import {
 } from 'react-native';
 import AnimatedBasic from './src/components/AnimatedBasic';
 import AnimatedBasicTwo from './src/components/AnimatedBasicTwo';
+import AnimatedBasicThree from './src/components/AnimatedBasicThree';
 
 const App: () => React$Node = () => {
   return (
     <>
-      <AnimatedBasicTwo/>
+      <AnimatedBasicThree />
     </>
   );
 };
