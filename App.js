@@ -4,20 +4,21 @@ import {
   StyleSheet,
   StatusBar,
 } from 'react-native';
-import AnimatedBasic from './src/components/AnimatedBasic';
-import AnimatedBasicTwo from './src/components/AnimatedBasicTwo';
-import AnimatedBasicThree from './src/components/AnimatedBasicThree';
-import AnimatedBasicFour from './src/components/AnimatedBasicFour';
-import AnimatedBasicFive from './src/components/AnimatedBasicFive';
-import AnimatedBasicSix from './src/components/AnimatedBasicSix';
-import AnimatedBasicSeven from './src/components/AnimatedBasicSeven';
-import AnimatedBasicEight from './src/components/AnimatedBasicEight';
-import AnimatedBasicNine from './src/components/AnimatedBasicNine';
+import AnimatedBasic from './src/components/basicUIAnimations/AnimatedBasic';
+import AnimatedBasicTwo from './src/components/basicUIAnimations/AnimatedBasicTwo';
+import AnimatedBasicThree from './src/components/basicUIAnimations/AnimatedBasicThree';
+import AnimatedBasicFour from './src/components/basicUIAnimations/AnimatedBasicFour';
+import AnimatedBasicFive from './src/components/basicUIAnimations/AnimatedBasicFive';
+import AnimatedBasicSix from './src/components/basicUIAnimations/AnimatedBasicSix';
+import AnimatedBasicSeven from './src/components/basicUIAnimations/AnimatedBasicSeven';
+import AnimatedBasicEight from './src/components/basicUIAnimations/AnimatedBasicEight';
+import AnimatedBasicNine from './src/components/basicUIAnimations/AnimatedBasicNine';
+import HabrAnimated from './src/components/HabrAnimated';
 
 const App: () => React$Node = () => {
   return (
     <>
-      <AnimatedBasicNine />
+      <HabrAnimated />
     </>
   );
 };
